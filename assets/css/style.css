@@ -40,7 +40,7 @@ p {
 }
 
 main {
-    background-image: url('../assets/images/bolsonaro-bg.jpg');
+    background-image: url('../images/bolsonaro-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;

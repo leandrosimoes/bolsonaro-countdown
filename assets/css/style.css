@@ -39,7 +39,7 @@ p {
     justify-content: center;
 }
 
-header {
+main {
     background-image: url('/assets/images/bolsonaro-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ header {
     font-size: 4vw;
 }
 
-header > div {
+main > div {
     width: 85vw;
     align-items: center;
 }

@@ -1,0 +1,95 @@
+:root {
+    --color: #fff;
+    --font-family: Merriweather, Arial, sans-serif;
+    --highlight-font-family: Anton, Verdana, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.row,
+.column {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.--align-self-center {
+    align-self: center;
+}
+
+.--justify-content-center {
+    justify-content: center;
+}
+
+header {
+    background-image: url('/assets/images/bolsonaro-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: var(--color);
+    font-size: 4vw;
+}
+
+header > div {
+    width: 85vw;
+    align-items: center;
+}
+
+.countdown {
+    font-family: var(--highlight-font-family);
+    font-size: 10vw;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.countdown__item {
+    opacity: 0;
+}
+
+.countdown__item.show {
+    animation: fadein 2s forwards;
+}
+
+.countdown__item.years {
+    animation-delay: 1s;
+}
+
+.countdown__item.days {
+    animation-delay: 1.5s;
+}
+
+.countdown__item.hours {
+    animation-delay: 2s;
+}
+
+.countdown__item.minutes {
+    animation-delay: 2.5s;
+}
+
+.countdown__item.seconds {
+    animation-delay: 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
